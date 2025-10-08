@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigitalCath | Printing & Digital Services in Ilagan</title>
+    //logo
+    <link rel="icon" href="./images/DC.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -13,20 +15,56 @@
     </style>
 </head>
 <body class="bg-white text-gray-900 scroll-smooth">
-
     <!-- Minimal Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-            <span class="font-bold text-xl text-blue-700">DigitalCath</span>
-            <div class="space-x-6 text-sm font-medium">
-                <a href="#home" class="hover:text-blue-600 transition">Home</a>
-                <a href="#about" class="hover:text-blue-600 transition">About</a>
-                <a href="#services" class="hover:text-blue-600 transition">Services</a>
-                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
-                <a href="#feedback" class="hover:text-blue-600 transition">Feedback</a>
-            </div>
+    <!-- Existing Desktop Navbar (Unmodified) -->
+<nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <span class="font-bold text-xl text-blue-700">DigitalCath</span>
+        <div class="space-x-6 text-sm font-medium hidden:sm md:flex">
+            <a href="#home" class="hover:text-blue-600 transition">Home</a>
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#services" class="hover:text-blue-600 transition">Services</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            <a href="#feedback" class="hover:text-blue-600 transition">Feedback</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<!-- Mobile Menu (Visible only on small screens) -->
+<nav x-data="{ open: false }" class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50 md:hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <span class="font-bold text-xl text-blue-700">DigitalCath</span>
+
+        <!-- Hamburger Button -->
+        <button @click="open = !open" class="text-gray-700 focus:outline-none">
+            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div x-show="open" x-transition class="bg-white border-t border-gray-200">
+        <div class="flex flex-col px-4 py-3 space-y-2 text-sm font-medium">
+            <a href="#home" class="hover:text-blue-600 transition">Home</a>
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#services" class="hover:text-blue-600 transition">Services</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            <a href="#feedback" class="hover:text-blue-600 transition">Feedback</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Alpine.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 
     <main class="max-w-4xl mx-auto px-4 pt-24 pb-10 space-y-20">
 
