@@ -74,7 +74,7 @@
             <h1 class="text-3xl sm:text-4xl font-bold mb-3">Welcome to DigitalCath</h1>
             <p class="text-base sm:text-lg text-gray-600 mb-6">Your local printing and digital service partner in Ilagan.</p>
             <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition text-sm font-medium">Send Your Files</a>
-            <p>Hello</p>
+            <h1>Hello</h1>
         </section>
 
         <!-- About Section -->
