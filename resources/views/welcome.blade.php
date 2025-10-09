@@ -77,6 +77,7 @@
             <p class="text-base sm:text-lg text-gray-600 mb-6">Your local printing and digital service partner in Ilagan.</p>
             <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition text-sm font-medium">Send Your Files</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sunt dolorum doloremque aut labore commodi optio, similique possimus illum iure impedit vero quidem aspernatur doloribus ipsam pariatur nesciunt quod. Quas!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime nobis est iste minus, molestiae quod. Quasi sunt modi exercitationem totam delectus, deleniti in eveniet labore cupiditate, deserunt molestiae. Rerum, mollitia?</p>
         </section>
 
         <!-- About Section -->
